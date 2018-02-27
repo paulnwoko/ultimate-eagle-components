@@ -1085,6 +1085,20 @@ IPC Medium Density</description>
 <wire x1="0.7" y1="-0.6" x2="0.5" y2="-0.6" width="0.127" layer="21"/>
 <circle x="-0.8636" y="0.762" radius="0.05679375" width="0.127" layer="21"/>
 </package>
+<package name="SOT-563">
+<text x="-1.537359375" y="-1.815759375" size="0.6096" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-1.611159375" y="0.87221875" size="0.6096" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.1176" y="0.3404" dx="0.45" dy="0.3" layer="1"/>
+<smd name="2" x="-1.1176" y="-0.16" dx="0.45" dy="0.3" layer="1"/>
+<smd name="3" x="-1.1176" y="-0.6604" dx="0.45" dy="0.3" layer="1"/>
+<smd name="4" x="0.2376" y="-0.6604" dx="0.45" dy="0.3" layer="1"/>
+<smd name="5" x="0.2376" y="-0.16" dx="0.45" dy="0.3" layer="1"/>
+<smd name="6" x="0.2376" y="0.3404" dx="0.45" dy="0.3" layer="1"/>
+<wire x1="-1.2048" y1="0.6676" x2="-1.4826" y2="0.6676" width="0.1524" layer="21"/>
+<wire x1="-1.5176" y1="0.6452" x2="-1.5176" y2="0.3674" width="0.1524" layer="21"/>
+<wire x1="-0.6452" y1="-0.9676" x2="-0.2174" y2="-0.9676" width="0.1524" layer="21"/>
+<wire x1="-0.2048" y1="0.6676" x2="-0.6326" y2="0.6676" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NCP103">
@@ -2301,7 +2315,20 @@ interrupt/shutdown output.</description>
 <gate name="B" symbol="NPN_BIAS" x="15.24" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOT-963">
+<device name="SOT963" package="SOT-963">
+<connects>
+<connect gate="A" pin="B_RES" pad="5"/>
+<connect gate="A" pin="C" pad="3"/>
+<connect gate="A" pin="E" pad="4"/>
+<connect gate="B" pin="B_RES" pad="2"/>
+<connect gate="B" pin="C" pad="6"/>
+<connect gate="B" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT563" package="SOT-563">
 <connects>
 <connect gate="A" pin="B_RES" pad="5"/>
 <connect gate="A" pin="C" pad="3"/>
