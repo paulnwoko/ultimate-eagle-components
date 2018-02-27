@@ -2290,7 +2290,7 @@ interrupt/shutdown output.</description>
 <device name="" package="QFN28">
 <connects>
 <connect gate="G$1" pin="0VDD" pad="19"/>
-<connect gate="G$1" pin="AGND" pad="3 8 28 M"/>
+<connect gate="G$1" pin="AGND" pad="1 2 3 4 5 8 24 26 28 M"/>
 <connect gate="G$1" pin="AVDD" pad="22"/>
 <connect gate="G$1" pin="CAPN" pad="10"/>
 <connect gate="G$1" pin="CAPP" pad="9"/>
