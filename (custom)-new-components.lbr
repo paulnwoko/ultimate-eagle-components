@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1556,6 +1556,34 @@ sensing element to the application.</description>
 <vertex x="-0.508" y="1.524"/>
 </polygon>
 </symbol>
+<symbol name="MAX30003">
+<wire x1="-15.24" y1="45.72" x2="15.24" y2="45.72" width="0.254" layer="94"/>
+<wire x1="15.24" y1="45.72" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="0" x2="-15.24" y2="45.72" width="0.254" layer="94"/>
+<pin name="ECGP" x="-20.32" y="43.18" length="middle"/>
+<pin name="ECGN" x="-20.32" y="33.02" length="middle"/>
+<pin name="CAPP" x="-20.32" y="27.94" length="middle"/>
+<pin name="CAPN" x="-20.32" y="17.78" length="middle"/>
+<pin name="VCM" x="-20.32" y="12.7" length="middle"/>
+<pin name="VBG" x="-20.32" y="7.62" length="middle"/>
+<pin name="VREF" x="-20.32" y="2.54" length="middle"/>
+<pin name="AGND" x="-5.08" y="-5.08" length="middle" rot="R90"/>
+<pin name="DGND" x="5.08" y="-5.08" length="middle" rot="R90"/>
+<pin name="AVDD" x="-5.08" y="50.8" length="middle" rot="R270"/>
+<pin name="DVDD" x="0" y="50.8" length="middle" rot="R270"/>
+<pin name="0VDD" x="5.08" y="50.8" length="middle" rot="R270"/>
+<pin name="CSB" x="20.32" y="43.18" length="middle" rot="R180"/>
+<pin name="SDI" x="20.32" y="38.1" length="middle" rot="R180"/>
+<pin name="SCLK" x="20.32" y="33.02" length="middle" rot="R180"/>
+<pin name="SDO" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="INTB" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="INT2B" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="FCLK" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="CPLL" x="20.32" y="7.62" length="middle" rot="R180"/>
+<text x="-15.24" y="55.88" size="1.778" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NCP103" prefix="IC">
@@ -2281,6 +2309,40 @@ interrupt/shutdown output.</description>
 <connect gate="B" pin="B_RES" pad="2"/>
 <connect gate="B" pin="C" pad="6"/>
 <connect gate="B" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX30003" prefix="IC">
+<gates>
+<gate name="G$1" symbol="MAX30003" x="0" y="-22.86"/>
+</gates>
+<devices>
+<device name="" package="QFN28">
+<connects>
+<connect gate="G$1" pin="0VDD" pad="19"/>
+<connect gate="G$1" pin="AGND" pad="1 2 3 4 5 8 24 26 28 M"/>
+<connect gate="G$1" pin="AVDD" pad="22"/>
+<connect gate="G$1" pin="CAPN" pad="10"/>
+<connect gate="G$1" pin="CAPP" pad="9"/>
+<connect gate="G$1" pin="CPLL" pad="11"/>
+<connect gate="G$1" pin="CSB" pad="15"/>
+<connect gate="G$1" pin="DGND" pad="12"/>
+<connect gate="G$1" pin="DVDD" pad="13"/>
+<connect gate="G$1" pin="ECGN" pad="7"/>
+<connect gate="G$1" pin="ECGP" pad="6"/>
+<connect gate="G$1" pin="FCLK" pad="14"/>
+<connect gate="G$1" pin="INT2B" pad="20"/>
+<connect gate="G$1" pin="INTB" pad="21"/>
+<connect gate="G$1" pin="SCLK" pad="16"/>
+<connect gate="G$1" pin="SDI" pad="17"/>
+<connect gate="G$1" pin="SDO" pad="18"/>
+<connect gate="G$1" pin="VBG" pad="27"/>
+<connect gate="G$1" pin="VCM" pad="25"/>
+<connect gate="G$1" pin="VREF" pad="23"/>
 </connects>
 <technologies>
 <technology name=""/>
